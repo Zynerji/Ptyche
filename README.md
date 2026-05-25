@@ -40,6 +40,16 @@ with the same three-step machinery applied to every invariant:
 | `lyapunov_rosenstein` | `λ₁` | Rosenstein mean-log-divergence (+ `r²` fit quality) |
 | `k2_entropy` | `K2` | GP correlation entropy, convergence-aware (KS lower bound) |
 
+## The folding curve
+
+![D2 vs embedding dimension for a generic vs square-law observable of the Lorenz attractor](examples/folding_curve.png)
+
+`D2` vs embedding dimension `m` for the *same* Lorenz attractor seen two ways. The square-law
+(intensity) observable is **folded**: at `m = 3` it lands right on the plastic number `ρ = 1.3247`
+(the trap) and only climbs to the true `D2 ≈ 2.06` as `m` grows. The generic observable stays
+near the truth — and both curves *inflate* past `m ≈ 8`, which is exactly why Ptyche reports the
+**plateau** rather than `max(m)`. Regenerate with `python examples/figure_folding.py`.
+
 ## Worked example (`python demo.py`)
 
 A square-law (intensity) detector watching the Lorenz attractor (true `D2 ≈ 2.06`,
