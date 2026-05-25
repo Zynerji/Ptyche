@@ -1,5 +1,9 @@
 # Ptyche
 
+[![CI](https://github.com/Zynerji/Ptyche/actions/workflows/ci.yml/badge.svg)](https://github.com/Zynerji/Ptyche/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/ptyche.svg)](https://pypi.org/project/ptyche/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 **Trustworthy nonlinear-dynamics invariants from real (non-generic) sensor data.**
 
 *Ptyche* (Greek πτυχή, "a fold") detects the attractor **folding** that corrupts chaos
